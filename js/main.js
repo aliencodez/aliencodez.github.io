@@ -3,9 +3,11 @@ $(window).on("load", function() {
 });
 
 var change = function(section) {
+    section = '#' + section;
     console.log('changing to ' + section);
     $('section').slideUp();
-    $('#' + section).slideDown();
+    $(section).removeClass('hidden');
+    $(section).slideDown();
 }
 
 var link = function(path) {
