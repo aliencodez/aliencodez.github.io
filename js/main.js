@@ -4,8 +4,8 @@ $(window).on("load", function() {
 
 var change = function(section) {
     console.log('changing to ' + section);
-    $('section').fadeOut(1000);
-    $('#' + section).fadeIn(1000);
+    $('section').slideUp();
+    $('#' + section).slideDown();
 }
 
 var link = function(path) {
