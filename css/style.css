@@ -119,3 +119,49 @@ header {
     background: #009688;
     color: #eee;
 }
+
+
+.panel-container{
+  margin-top:2em;
+  display:flex;
+  width:100%;
+  justify-content: space-around;;
+  align-items: center;
+}
+
+.panel{
+  height:10vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#212121;
+  border-right:5px solid #009688;
+  transition: 0.5s ease;
+}
+
+.panel:hover{
+  background:#009688;
+  color:#eee !important;
+  border-color:#212121;
+}
+.panel-title{
+  padding:1em;
+  font-size:1.5em;
+}
+
+.button{
+  height:6vh;
+  width:6vw;
+  padding:0.5em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-right:5px solid #009688;
+}
+
+.button:hover{
+  background:#009688;
+  color:#eee !important;
+  border-color:#212121;
+}
