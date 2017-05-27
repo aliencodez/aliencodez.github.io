@@ -92,7 +92,7 @@ body {
 }
 
 .section-body p {
-  font-size:1.2em;
+  font-size: 1.2em;
 }
 
 header {
@@ -220,32 +220,55 @@ header {
 }
 
 .contact h3 {
-  border-right:5px solid #7E37F5;
-  border-left:5px solid #7E37F5;
+  border-right: 5px solid #7E37F5;
+  border-left: 5px solid #7E37F5;
   display: flex;
-  padding:0.1em 1em;
+  padding: 0.1em 1em;
   justify-content: center;
   align-items: center;
-  height:2em;
+  height: 2em;
   font-size: 2em;
   font-family: 'Lato';
-  width:6em;
+  width: 6em;
 }
 
 .contact p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:2em;
-  padding:1em;
+  height: 2em;
+  padding: 1em;
   font-size: 1.5em;
   font-family: 'Lato';
 }
 
-@media only screen and (orientation:portrait) {
+@media only screen and (max-width:950px) and (orientation:portrait) {
   // CSS applied when the device is in portrait mode
   #warning-text {
     display: flex;
+  }
+}
+
+@media only screen and (orientation:portrait) {
+  #warning-text{
+    display:flex;
+  }
+}
+
+@media only screen and (max-width:950px) {
+  header {
+    width:100%;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .nav {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-element{
+    width:100%;
   }
 }
 
