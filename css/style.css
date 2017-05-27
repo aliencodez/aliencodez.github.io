@@ -1,167 +1,258 @@
 /*
-    Light: #eee
-    Teal : #009688
-    White : #212121
+  purple: #7E37F5
 */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#warning-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: 'Lato';
+  font-size: 4em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .hidden {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .light {
-    color: #eee;
+  color: #32383D;
 }
 
 .light-bg {
-    background-color: #eee;
+  background-color: #32383D;
 }
 
-.teal {
-    color: #009688;
+.purple {
+  color: #7E37F5;
 }
 
-.teal-bg {
-    background-color: #009688
-}
-
-.dark {
-    color: #212121;
-}
-
-.dark-bg {
-    background-color: #212121
+.text {
+  color: white;
 }
 
 body {
-    background: #eee;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section {
-    margin-top: 45vh;
-    width: 60%;
-    margin-right: auto;
-    margin-left: 30vw;
+.container {
+  background: black;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  1d1d1d flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content-container {
+  order: 3;
+  margin: 1em;
+  margin-top: 2em;
+  width: 77%;
 }
 
 .section-title {
-    border-left: 5px solid #009688;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0.5em;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'Lato';
+  border-left: 5px solid #7E37F5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Lato';
 }
 
 .section-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: justify;
-    padding: 1em 1.5em;
-    font-family: 'Lato';
+  margin-top: 3.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: justify;
+  padding: 1em 1.5em;
+  font-family: 'Lato';
+}
+
+.section-body p {
+  font-size:1.2em;
 }
 
 header {
-    width: 184px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.logo {
-    position: fixed;
-    margin-right: auto;
-    margin-left: 5vw;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 184px;
 }
 
 .logo img {
-    height: 184px;
-    width: 184px;
+  height: 184px;
+  width: 184px;
 }
 
 .nav {
-    position: fixed;
-    top: 45vh;
-    left: 5vw;
-    border-right: 5px solid #009688;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+  order: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .nav-element {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-    width: 7vw;
-    padding: 1em;
-    font-size: 1.2em;
-    font-family: 'Lato';
-    transition: .5s ease;
+  border-right: 5px solid #7E37F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1em;
+  color: white;
+  width: 6.5em;
+  padding: 1em;
+  font-size: 1.2em;
+  font-family: 'Lato';
+  transition: .5s ease;
 }
 
 .nav-element:hover {
-    background: #009688;
-    color: #eee;
+  background: #7E37F5;
+  color: white;
+  border-right: 5px solid white;
 }
 
-
-.panel-container{
-  margin-top:2em;
-  display:flex;
-  width:100%;
-  justify-content: space-around;;
+.panel-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  ;
   align-items: center;
 }
 
-.panel{
-  height:10vh;
-  display:flex;
+.panel {
+  height: 4em;
+  width: 20em;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:#212121;
-  border-right:5px solid #009688;
+  color: white;
+  border-right: 5px solid #7E37F5;
   transition: 0.5s ease;
 }
 
-.panel:hover{
-  background:#009688;
-  color:#eee !important;
-  border-color:#212121;
-}
-.panel-title{
-  padding:1em;
-  font-size:1.5em;
+.panel:hover {
+  background: #7E37F5;
+  border-color: white;
 }
 
-.button{
-  height:6vh;
-  width:6vw;
-  padding:0.5em;
-  display:flex;
+.panel-title {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.button {
+  color: White;
+  height: 2em;
+  width: 6em;
+  padding: 0.5em;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border-right:5px solid #009688;
+  border-left: 5px solid #7E37F5;
 }
 
-.button:hover{
-  background:#009688;
-  color:#eee !important;
-  border-color:#212121;
+.button:hover {
+  background: #7E37F5;
+  border-color: white;
+}
+
+.render-screen {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.render-screen .button {
+  align-self: flex-start;
+  margin: 1em 0;
+}
+
+.grid {
+  margin: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact>div {
+  width: 47%;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h3 {
+  border-right:5px solid #7E37F5;
+  border-left:5px solid #7E37F5;
+  display: flex;
+  padding:0.1em 1em;
+  justify-content: center;
+  align-items: center;
+  height:2em;
+  font-size: 2em;
+  font-family: 'Lato';
+  width:6em;
+}
+
+.contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:2em;
+  padding:1em;
+  font-size: 1.5em;
+  font-family: 'Lato';
+}
+
+@media only screen and (orientation:portrait) {
+  // CSS applied when the device is in portrait mode
+  #warning-text {
+    display: flex;
+  }
+}
+
+@media only screen and (orientation:landscape) {
+  // CSS applied when the device is in landscape mode
+  #warning-text {
+    display: none;
+    visibility: hidden;
+  }
 }

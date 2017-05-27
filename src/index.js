@@ -36,7 +36,7 @@ class Index extends React.Component{
      return (
        <div>
        <div className="section-title">
-         <h3 className="dark"><span className="teal">P</span>ortfolio</h3>
+         <h3 className="text"><span className="purple">P</span>ortfolio</h3>
        </div>
        <div className="section-body">
           {view}

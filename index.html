@@ -2,44 +2,64 @@
 <html>
 
 <head>
-    <title>Z - Coders</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Lato" rel="stylesheet">
+  <title>Z - Coders</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Lato" rel="stylesheet">
 </head>
 
 <body>
+  <div class="container">
     <header>
-        <div class="logo" onClick="link('/')">
-            <img src="./img/logo.png" alt="">
-        </div>
-    </header>
-    <div class="nav">
+      <div class="logo" onClick="link('/')">
+        <img src="./img/logo.png" alt="">
+      </div>
+
+      <div class="nav">
         <div class="nav-element" onclick="change('home')">Home</div>
         <div class="nav-element" onclick="change('portfolio')">Portfolio</div>
         <div class="nav-element" onclick="change('contact')">Contact</div>
-    </div>
-    <section id="home" class="hidden">
+      </div>
+    </header>
+    <div class="content-container">
+      <section id="home" class="hidden">
         <div class="section-title">
-            <h3 class="dark"><span class="teal">Z</span>-Coders</h3>
+          <h3 class="text"><span class="purple">Z</span>-Coders</h3>
         </div>
         <div class="section-body">
-            <p class="dark">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem
-            </p>
+          <p class="text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+          </p>
         </div>
-    </section>
-    <section id="portfolio" class="hidden">
-    </section>
-    <section id="contact" class="hidden">
+      </section>
+      <section id="portfolio" class="hidden">
+      </section>
+      <section id="contact" class="hidden">
         <div class="section-title">
-            <h3><span class="teal">Y</span>et to be Coded</h3>
+          <h3 class="text"><span class="purple">C</span>ontact Us</h3>
         </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/app_bundle.js"></script>
+        <div class="section-body text">
+          <div class="contact">
+            <div>
+              <h3><span class="purple">E</span>mail</h3>
+              <p>sidgroks@gmail.com</p>
+            </div>
+            <div>
+              <h3><span class="purple">#</span>-no.</h3>
+              <p>+91 9885317891</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="warning-text">
+    <p>Website Only Viewable In Landscape Mode</p>
+    <div>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/app_bundle.js"></script>
 </body>
 
 </html>
