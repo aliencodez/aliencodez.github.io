@@ -22,6 +22,14 @@
   height: 100vh;
 }
 
+.medium-size{
+  font-size:1.2em;
+}
+
+.quote{
+  padding:1em 0;
+  font-size:1.5em;
+}
 .hidden {
   display: none;
   visibility: hidden;
@@ -129,7 +137,7 @@ header {
   padding: 1em;
   font-size: 1.2em;
   font-family: 'Lato';
-  transition: .5s ease;
+  transition: 1s ease;
 }
 
 .nav-element:hover {
@@ -155,7 +163,7 @@ header {
   align-items: center;
   color: white;
   border-right: 5px solid #7E37F5;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 
 .panel:hover {
@@ -192,16 +200,65 @@ header {
 
 .render-screen .button {
   align-self: flex-start;
-  margin: 1em 0;
+}
+
+.render-content{
+  display:flex;
+  margin:1em;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:100%;
 }
 
 .grid {
   margin: 1em;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.grid>div{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.grid-element{
+  margin:1em;
+  border-left:5px solid #7E37F5;
+  height:6.5em;
+  width:12em;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  transition: all 1s ease;
+}
+
+.grid-element:hover{
+  border-color: white;
+}
+
+.grid-elem-image{
+  flex:1;
+  height:70%;
+  width:100%;
+}
+
+.grid-elem-image img{
+  width:100%;
+  height:100%;
+}
+
+.grid-elem-info{
+  flex:1;
+  width:100%;
+  height:30%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  font-size: 0.8em;
+  font-family: 'Lato';
 }
 
 .contact {

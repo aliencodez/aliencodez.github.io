@@ -9557,51 +9557,93 @@ function PanelContainer(props) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Render;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _grid = __webpack_require__(185);
+
+var _grid2 = _interopRequireDefault(_grid);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Render(props) {
-  var grid = null;
-  if (props.view === "templates") {
-    grid = _react2.default.createElement(
-      "h1",
-      { className: "text" },
-      " Templates "
-    );
-  } else if (props.view === "designs") {
-    grid = _react2.default.createElement(
-      "h1",
-      { className: "text" },
-      " Designs "
-    );
-  } else {
-    grid = null;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Render = function (_React$Component) {
+  _inherits(Render, _React$Component);
+
+  function Render() {
+    _classCallCheck(this, Render);
+
+    var _this = _possibleConstructorReturn(this, (Render.__proto__ || Object.getPrototypeOf(Render)).call(this));
+
+    _this.state = {
+      templates: [{
+        id: 1,
+        title: 'Dark Nova',
+        imageUrl: "http://lorempixel.com/400/200/"
+      }, {
+        id: 2,
+        title: 'Minimal Material',
+        imageUrl: 'http://lorempixel.com/400/200/'
+      }],
+      designs: []
+    };
+    return _this;
   }
-  return _react2.default.createElement(
-    "div",
-    { className: "render-screen" },
-    _react2.default.createElement(
-      "div",
-      { className: "button",
-        onClick: props.updateView.bind(this, 'panels') },
-      " Back "
-    ),
-    " ",
-    _react2.default.createElement(
-      "div",
-      { className: "grid" },
-      " ",
-      grid,
-      " "
-    ),
-    " "
-  );
-}
+
+  _createClass(Render, [{
+    key: 'render',
+    value: function render() {
+      var grid = null;
+      if (this.props.view === "templates") {
+        grid = _react2.default.createElement(_grid2.default, { title: 'Templates', elems: this.state.templates });
+      } else if (this.props.view === "designs") {
+        grid = _react2.default.createElement(_grid2.default, { title: 'Designs', elems: this.state.designs });
+      } else {
+        grid = null;
+      }
+      return _react2.default.createElement(
+        'div',
+        { className: 'render-screen' },
+        _react2.default.createElement(
+          'div',
+          { className: 'button', onClick: this.props.updateView.bind(this, 'panels') },
+          'Back'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'render-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'render-title text' },
+            _react2.default.createElement(
+              'h3',
+              null,
+              this.props.view.toUpperCase()
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'grid' },
+            grid
+          )
+        )
+      );
+    }
+  }]);
+
+  return Render;
+}(_react2.default.Component);
+
+exports.default = Render;
 
 /***/ }),
 /* 83 */
@@ -22225,6 +22267,53 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Grid;
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Grid(props) {
+  var grid = props.elems;
+  grid = grid.map(function (item) {
+    return _react2.default.createElement(
+      "div",
+      { key: item.id, className: "grid-element" },
+      _react2.default.createElement(
+        "div",
+        { className: "grid-elem-image" },
+        _react2.default.createElement("img", { src: item.imageUrl })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "grid-elem-info" },
+        _react2.default.createElement(
+          "h3",
+          { className: "text" },
+          item.title
+        )
+      )
+    );
+  });
+  return _react2.default.createElement(
+    "div",
+    null,
+    grid
+  );
+}
 
 /***/ })
 /******/ ]);
