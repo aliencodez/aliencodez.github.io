@@ -5,7 +5,7 @@ export default class Render extends React.Component {
   constructor() {
     super();
     this.state = {
-      templates: [
+      web: [
         {
           id: 1,
           title: 'Dark Nova',
@@ -17,18 +17,12 @@ export default class Render extends React.Component {
           imageUrl:'http://lorempixel.com/400/200/'
         }
       ],
-      designs: []
+      logo: [],
     }
   }
   render() {
-    let grid = null;
-    if (this.props.view === "templates") {
-      grid = <Grid title="Templates" elems={this.state.templates}/>
-    } else if (this.props.view === "designs") {
-      grid = <Grid title="Designs" elems={this.state.designs}/>
-    } else {
-      grid = null;
-    }
+    let view=this.props.view;
+    let grid = <Grid title={this.props.view.toUpperCase()}  elems={this.state[view]} />
     return (
       <div className="render-screen">
         <div className="button" onClick={this.props.updateView.bind(this, 'panels')}>Back</div>

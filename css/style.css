@@ -149,12 +149,13 @@ header {
 .panel-container {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: space-around;
-  ;
   align-items: center;
 }
 
 .panel {
+  margin:0.5em 0;
   height: 4em;
   width: 20em;
   display: flex;
@@ -185,6 +186,7 @@ header {
   justify-content: center;
   align-items: center;
   border-left: 5px solid #7E37F5;
+  transition: .5s ease;
 }
 
 .button:hover {
