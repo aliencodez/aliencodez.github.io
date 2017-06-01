@@ -1,14 +1,18 @@
-$(window).on("load", function() {
-    change('home');
-});
+// $(window).on("load", function() {
+//     change('home');
+// });
 
-var change = function(section) {
-    section = '#' + section;
-    console.log('changing to ' + section);
+$(function(){
+  $('.nav-element').click(function(section){
+    var section = $(this).text().toLowerCase();
+    console.log(section);
     $('section').slideUp();
-    $(section).removeClass('hidden');
-    $(section).slideDown();
-}
+    $('#'+section).removeClass('hidden');
+    $('#'+section).slideDown();
+    $('.nav-element').removeClass('active');
+    $(this).addClass('active');
+  });
+});
 
 var link = function(path) {
     console.log(path);

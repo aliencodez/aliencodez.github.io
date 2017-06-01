@@ -9,7 +9,7 @@ export default class Render extends React.Component {
         {
           id: 1,
           title: 'Material-Simple',
-          imageUrl: "/img/material-simple-screenshot.png",
+          imageUrl: '/img/material-simple-screenshot.png',
           url:'/templates/Material-Simple'
         }
       ],

@@ -59,6 +59,12 @@ body {
   align-items: center;
 }
 
+.active{
+  background: #7E37F5;
+  color: white;
+  border-right: 5px solid white !important;
+}
+
 .container {
   background: black;
   width: 100%;
@@ -145,6 +151,7 @@ header {
   color: white;
   border-right: 5px solid white;
 }
+
 
 .panel-container {
   display: flex;
