@@ -10,8 +10,8 @@ class Index extends React.Component{
     this.state={
       view:'panels',
       panels:[
-        {id:1,title:"Web Designs",view:"web"},
-        {id:2,title:"Logo Designs",view:"logo"},
+        {id:1,title:"Web Designs",view:"web"}
+        // {id:2,title:"Logo Designs",view:"logo"},
       ]
     };
     this.updateView = this.updateView.bind(this);

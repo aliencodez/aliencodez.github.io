@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOPP</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-item" onclick="change('home')"><i class="fa fa-home"></i></div>
+        <!--<div class="menu-item" onclick="change('walkthrough')"><i class="fa fa-video-camera"></i></div>-->
+        <div class="menu-item" onclick="change('download')"><i class="fa fa-download"></i></div>
+        <div class="menu-item" onclick="change('about')"><i class="fa fa-lightbulb-o"></i></div>
+        <div class="menu-item" onclick="change('contact')"><i class="fa fa-phone"></i></div>
+    </div>
+    <div id="logo">
+        <h3>Title</h3>
+    </div>
+    <section id="home">
+        <div class="grid">
+            <div class="panel">
+                <div class="panel-title">Easy to Use</div>
+                <div class="panel-body">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+            </div>
+            <div class="panel">
+                <div class="panel-title">Budget Friendly</div>
+                <div class="panel-body">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+            </div>
+            <div class="panel">
+                <div class="panel-title">"Lazy Day" Friend</div>
+                <div class="panel-body">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+            </div>
+            <div class="panel">
+                <div class="panel-title">Anytime, Anywhere</div>
+                <div class="panel-body">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+            </div>
+        </div>
+    </section>
+    <!--<section id="walkthrough">
+        <div class="section-header ">
+            <h3 class="teal ">Walkthrough</h3>
+        </div>
+        <div class="section-body "></div>
+    </section>-->
+    <section id="download">
+        <div class="section-header ">
+            <h3 class="teal ">Downloads</h3>
+        </div>
+        <div class="section-body ">
+            <div class="download-button ">
+                <div><i class="fa fa-android "></i></div>
+                <div>
+                    <p>Google Play Store</p>
+                </div>
+            </div>
+            <div class="download-button ">
+                <div><i class="fa fa-apple "></i></div>
+                <div>
+                    <p>Apple App Store</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-header ">
+            <h3 class="teal ">About</h3>
+        </div>
+        <div class="section-body ">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-header ">
+            <h3 class="teal ">Contact Us</h3>
+        </div>
+        <div class="section-body "></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+    <script src="./js/main.js "></script>
+    <script src="./js/skrollr.min.js "></script>
+    <script>
+        $(window).on("load", function() {
+            var s = skrollr.init();
+        });
+    </script>
+</body>
+
+</html>

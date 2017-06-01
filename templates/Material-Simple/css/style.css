@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #212121;
+}
+
+.teal {
+    color: #00897B !important;
+}
+
+.menu {
+    background: transparent;
+    border-top: 5px solid #00695C;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: White;
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.menu-item:hover {
+    background: #00897B;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.section-header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Oswald';
+    color: White;
+}
+
+.section-body {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-body p {
+    align-self: flex-start;
+    width: 80%;
+    text-align: justify;
+    font-family: 'Lato';
+    font-size: 1.5em;
+    color: white;
+}
+
+.download-button {
+    border-left: 5px solid #00897B;
+    color: White;
+    height: 20vh;
+    width: 25vw;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    margin: 1em;
+    font-size: 1.2em;
+    transition: all 1s ease;
+}
+
+.download-button>div>i {
+    font-size: 2em;
+    flex: 1;
+    width: 100%;
+}
+
+.download-button>div>p {
+    flex: 1;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.download-button:hover {
+    background: #00897B;
+    border-color: white;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel {
+    background: #212121;
+    border-left: 5px solid #00695C;
+    width: 22vw;
+    height: 20vh;
+    margin: 5em 11em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    color: White;
+}
+
+.panel-title {
+    font-family: 'Oswald';
+    margin-bottom: 0.2em;
+    flex: 1;
+    font-size: 1.2em;
+}
+
+.panel-body {
+    font-family: 'Raleway';
+    flex: 2;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#logo {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6em;
+    font-family: 'Lato';
+}
+
+#car img {
+    width: 64px;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+}

@@ -8,21 +8,26 @@ export default class Render extends React.Component {
       web: [
         {
           id: 1,
-          title: 'Dark Nova',
-          imageUrl: "http://lorempixel.com/400/200/"
-        },
-        {
-          id:2,
-          title:'Minimal Material',
-          imageUrl:'http://lorempixel.com/400/200/'
+          title: 'Material-Simple',
+          imageUrl: "/img/material-simple-screenshot.png",
+          url:'/templates/Material-Simple'
         }
       ],
       logo: [],
     }
+
+    this.gridClick = this.gridClick.bind(this);
   }
+
+  gridClick(url){
+    window.open(url);
+    console.log("opening");
+  }
+
+
   render() {
     let view=this.props.view;
-    let grid = <Grid title={this.props.view.toUpperCase()}  elems={this.state[view]} />
+    let grid = <Grid click={this.gridClick} title={this.props.view.toUpperCase()}  elems={this.state[view]} />
     return (
       <div className="render-screen">
         <div className="button" onClick={this.props.updateView.bind(this, 'panels')}>Back</div>

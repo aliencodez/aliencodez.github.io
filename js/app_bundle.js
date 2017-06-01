@@ -9587,23 +9587,28 @@ var Render = function (_React$Component) {
     _this.state = {
       web: [{
         id: 1,
-        title: 'Dark Nova',
-        imageUrl: "http://lorempixel.com/400/200/"
-      }, {
-        id: 2,
-        title: 'Minimal Material',
-        imageUrl: 'http://lorempixel.com/400/200/'
+        title: 'Material-Simple',
+        imageUrl: "/img/material-simple-screenshot.png",
+        url: '/templates/Material-Simple'
       }],
       logo: []
     };
+
+    _this.gridClick = _this.gridClick.bind(_this);
     return _this;
   }
 
   _createClass(Render, [{
+    key: 'gridClick',
+    value: function gridClick(url) {
+      window.open(url);
+      console.log("opening");
+    }
+  }, {
     key: 'render',
     value: function render() {
       var view = this.props.view;
-      var grid = _react2.default.createElement(_grid2.default, { title: this.props.view.toUpperCase(), elems: this.state[view] });
+      var grid = _react2.default.createElement(_grid2.default, { click: this.gridClick, title: this.props.view.toUpperCase(), elems: this.state[view] });
       return _react2.default.createElement(
         'div',
         { className: 'render-screen' },
@@ -9668,11 +9673,13 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Grid(props) {
+  var _this = this;
+
   var grid = props.elems;
   grid = grid.map(function (item) {
     return _react2.default.createElement(
       "div",
-      { key: item.id, className: "grid-element" },
+      { key: item.id, className: "grid-element", onClick: props.click.bind(_this, item.url) },
       _react2.default.createElement(
         "div",
         { className: "grid-elem-image" },
@@ -9739,7 +9746,9 @@ var Index = function (_React$Component) {
 
     _this.state = {
       view: 'panels',
-      panels: [{ id: 1, title: "Web Designs", view: "web" }, { id: 2, title: "Logo Designs", view: "logo" }]
+      panels: [{ id: 1, title: "Web Designs", view: "web" }
+      // {id:2,title:"Logo Designs",view:"logo"},
+      ]
     };
     _this.updateView = _this.updateView.bind(_this);
     return _this;
