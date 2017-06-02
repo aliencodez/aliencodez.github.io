@@ -7,21 +7,6 @@
   padding: 0;
 }
 
-#warning-text {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  color: red;
-  font-family: 'Lato';
-  font-size: 4em;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: black;
-  width: 100vw;
-  height: 100vh;
-}
-
 .medium-size{
   font-size:1.2em;
 }
@@ -62,7 +47,7 @@ body {
 .active{
   background: #7E37F5;
   color: white;
-  border-right: 5px solid white !important;
+  border-color:white !important;
 }
 
 .container {
