@@ -165,7 +165,6 @@ header {
   height: 4em;
   width: 20em;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -311,7 +310,7 @@ header {
 @media screen and (max-width:768px) {
 
   body{
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   header{
@@ -364,8 +363,15 @@ header {
     padding:0;
   }
 
-  .grid>div{
-    flex-direction: column;
+  .grid{
+    justify-content: center;
+  }
+  .panel-container{
+    width:100vw;
+  }
+  .panel{
+    width: auto;
+    align-self: stretch;
   }
 
 
