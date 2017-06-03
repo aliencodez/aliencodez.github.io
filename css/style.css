@@ -298,6 +298,11 @@ header {
     align-items: flex-start;
   }
 
+  .container{
+    height:auto;
+    align-self: stretch;
+  }
+
   header{
     width:100vw;
   }
