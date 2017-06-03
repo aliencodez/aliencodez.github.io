@@ -258,6 +258,9 @@ header {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
 }
 
 .contact>div {
@@ -288,7 +291,7 @@ header {
   align-items: center;
   height: 2em;
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-family: 'Lato';
 }
 
@@ -364,13 +367,4 @@ header {
     align-self: stretch;
   }
 
-
-  .contact{
-    flex-direction: column;
-  }
-  .contact>div{
-    width:100%;
-    padding:0;
-    align-self: stretch;
-  }
 }
