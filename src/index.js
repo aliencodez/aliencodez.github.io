@@ -47,4 +47,4 @@ class Index extends React.Component {
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById("portfolio"));
+ReactDOM.render(<Index />, document.getElementById("showcase"));
