@@ -5,6 +5,11 @@
 
 body {
     background: #212121;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .teal {
@@ -48,7 +53,7 @@ section {
 
 .section-header {
     width: 100%;
-    height: 20vh;
+    margin-bottom: 4.3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,10 +63,10 @@ section {
 }
 
 .section-body {
-    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -78,8 +83,8 @@ section {
 .download-button {
     border-left: 5px solid #00897B;
     color: White;
-    height: 20vh;
-    width: 25vw;
+    height:4em;
+    width: 10em;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -117,8 +122,7 @@ section {
 .panel {
     background: #212121;
     border-left: 5px solid #00695C;
-    width: 22vw;
-    height: 20vh;
+    width: 18.9em;
     margin: 5em 11em;
     display: flex;
     flex-direction: column;
@@ -141,19 +145,65 @@ section {
 }
 
 #logo {
+    font-size: 2em;
     background: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4em;
     font-family: 'Lato';
 }
 
-#car img {
-    width: 64px;
-    position: absolute;
-    top: 45%;
-    left: 0%;
+@media only screen and (max-width:768px) {
+  .menu{
+    position:fixed;
+    height:5em;
+    width:100%;
+    border:0;
+    border-bottom: 5px solid #00897B;
+    top:0%;
+    left:0%;
+    flex-direction: row;
+  }
+
+  section{
+    height:auto;
+    min-height: 100vh;
+  }
+
+  .section-header{
+    padding:0;
+    padding-top:4.3em
+  }
+
+  .grid{
+    width:100vw;
+    margin:1em;
+    margin-top:10em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .panel{
+    word-wrap: break-word;
+    margin:.5em 0;
+    width:75%;
+  }
+
+
+  .download-button{
+    width:100%;
+    margin:0em;
+  }
+
+
+  #logo{
+    margin:1em 0.2em;
+    top:4.5em;
+    width:100%;
+    text-align: center;
+    font-size: 1.5em;    font-family: 'Lato';
+  }
 }
