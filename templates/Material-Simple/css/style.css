@@ -1,209 +1,211 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #212121;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .teal {
-    color: #00897B !important;
+  color: #00897B !important;
 }
 
 .menu {
-    background: transparent;
-    border-top: 5px solid #00695C;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: transparent;
+  border-top: 5px solid #00695C;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: White;
-    font-size: 1.5em;
-    width: 2em;
-    height: 2em;
-    margin: 0.5em;
-    border: 2px solid white;
-    border-radius: 50%;
-    transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: White;
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: .5s ease;
 }
 
 .menu-item:hover {
-    background: #00897B;
+  background: #00897B;
 }
 
 section {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .section-header {
-    width: 100%;
-    margin-bottom: 4.3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-family: 'Oswald';
-    color: White;
+  width: 100%;
+  margin-bottom: 4.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: 'Oswald';
+  color: White;
 }
 
 .section-body {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-body p {
-    align-self: flex-start;
-    width: 80%;
-    text-align: justify;
-    font-family: 'Lato';
-    font-size: 1.5em;
-    color: white;
+  align-self: flex-start;
+  width: 80%;
+  text-align: justify;
+  font-family: 'Lato';
+  font-size: 1.5em;
+  color: white;
 }
 
 .download-button {
-    border-left: 5px solid #00897B;
-    color: White;
-    height:4em;
-    width: 10em;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
-    margin: 1em;
-    font-size: 1.2em;
-    transition: all 1s ease;
+  border-left: 5px solid #00897B;
+  color: White;
+  height: 4em;
+  width: 10em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  margin: 1em;
+  font-size: 1.2em;
+  transition: all 1s ease;
 }
 
-.download-button>div>i {
-    font-size: 2em;
-    flex: 1;
-    width: 100%;
+.download-button > div > i {
+  font-size: 2em;
+  flex: 1;
+  width: 100%;
 }
 
-.download-button>div>p {
-    flex: 1;
-    width: 100%;
-    font-size: 1.2em;
+.download-button > div > p {
+  flex: 1;
+  width: 100%;
+  font-size: 1.2em;
 }
 
 .download-button:hover {
-    background: #00897B;
-    border-color: white;
+  background: #00897B;
+  border-color: white;
 }
 
 .grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .panel {
-    background: #212121;
-    border-left: 5px solid #00695C;
-    width: 18.9em;
-    margin: 5em 11em;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    color: White;
+  height: 8em;
+  background: #212121;
+  border-left: 5px solid #00695C;
+  width: 15em;
+  margin: 5em 11em;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  color: White;
 }
 
 .panel-title {
-    font-family: 'Oswald';
-    margin-bottom: 0.2em;
-    flex: 1;
-    font-size: 1.2em;
+  font-family: 'Oswald';
+  margin-bottom: 0.2em;
+  flex: 1;
+  font-size: 1.2em;
 }
 
 .panel-body {
-    font-family: 'Raleway';
-    flex: 2;
-    text-align: justify;
-    font-size: 0.8em;
+  font-family: 'Raleway';
+  flex: 2;
+  text-align: justify;
+  font-size: 0.8em;
 }
 
 #logo {
-    font-size: 2em;
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Lato';
+  font-size: 2em;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Lato';
 }
 
-@media only screen and (max-width:768px) {
-  .menu{
-    position:fixed;
-    height:5em;
-    width:100%;
-    border:0;
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    border: 0;
     border-bottom: 5px solid #00897B;
-    top:0%;
-    left:0%;
+    top: 0%;
+    left: 0%;
     flex-direction: row;
   }
 
-  section{
-    height:auto;
+  section {
+    height: auto;
     min-height: 100vh;
   }
 
-  .section-header{
-    padding:0;
-    padding-top:4.3em
+  .section-header {
+    padding: 0;
+    padding-top: 4.3em;
   }
 
-  .grid{
-    width:100vw;
-    margin:1em;
-    margin-top:10em;
+  .grid {
+    width: 100vw;
+    margin: 1em;
+    margin-top: 10em;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .panel{
+  .panel {
     word-wrap: break-word;
-    margin:.5em 0;
-    width:75%;
+    margin: .5em 0;
+    width: 75%;
   }
 
-
-  .download-button{
-    width:100%;
-    margin:0em;
+  .download-button {
+    width: 100%;
+    margin: 0em;
   }
 
-
-  #logo{
-    margin:1em 0.2em;
-    top:4.5em;
-    width:100%;
+  #logo {
+    margin: 1em 0.2em;
+    top: 4.5em;
+    width: 100%;
     text-align: center;
-    font-size: 1.5em;    font-family: 'Lato';
+    font-size: 1.5em;
+    font-family: 'Lato';
   }
 }
