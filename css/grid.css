@@ -1,0 +1,43 @@
+.grid {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.grid-element {
+  -moz-user-select: none;
+  user-select: none;
+  margin: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: #eee;
+  width: 15em;
+}
+
+.grid-image {
+  height: 10em;
+  width: 100%;
+  background: white;
+}
+
+.grid-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-info {
+  width: 100%;
+  word-wrap: break-word;
+  padding: 1em;
+  color: #666;
+}
+
+.grid-title {
+  font-weight: bold;
+}
+
+.grid-desc {
+  font-size: 0.7em;
+}
