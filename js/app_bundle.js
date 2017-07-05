@@ -3,7 +3,7 @@ module.exports=[
   {
     "id": "1",
     "label": "Material-Dark-Simple",
-    "img": "http://lorempixel.com/400/200/",
+    "img": "http://aliencodez.com/img/material-simple-screenshot.png",
     "url": "http://aliencodez.com/templates/Material-Simple/",
     "desc": "Dark Version for a material based webpage"
   }
