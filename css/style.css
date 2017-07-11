@@ -5,6 +5,9 @@
 
 /* Generic Classes */
 
+body {
+  background: #eee;
+}
 header {
   display: flex;
   width: 100%;
@@ -30,9 +33,13 @@ footer {
 }
 
 .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
   border-radius: 1em;
   padding: 2em 1em;
-  background: #eee;
+  background: #ccc;
   font-size: 1.2em;
 }
 
@@ -40,7 +47,7 @@ footer {
   color: #8d1ce2;
 }
 
-.hidder {
+.hidden {
   display: none;
   visibility: hidden;
 }
@@ -53,6 +60,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: contain;
 }
 
 .site-logo > img {
@@ -65,6 +73,8 @@ footer {
   align-self: flex-end;
   height: 5.5em;
   width: 100vw;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 10px 18px 0px rgba(0, 0, 0, 0.05);
 }
 
 .nav ul {
@@ -126,7 +136,7 @@ footer {
 }
 
 .content-container {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -138,7 +148,7 @@ footer {
 }
 
 .section-title {
-  margin: 0.5em;
+  margin: 0 auto;
   margin-top: 0.1em;
   font-size: 2em;
   font-family: "Roboto";
@@ -155,7 +165,7 @@ footer {
 .section-content > p {
   padding: 0.5em;
   font-size: 1.1em;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Specific Styling / ID's */

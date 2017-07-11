@@ -2,10 +2,17 @@
 module.exports=[
   {
     "id": "1",
-    "label": "Material-Dark-Simple",
+    "label": "Material Dark Simple - Web Template",
     "img": "http://aliencodez.com/img/material-simple-screenshot.png",
     "url": "http://aliencodez.com/templates/Material-Simple/",
     "desc": "Dark Version for a material based webpage"
+  },
+  {
+    "id": "2",
+    "label": "Google Chrome Mono Logo",
+    "img": "http://aliencodez.com/img/chrome-mono.png",
+    "url": "http://aliencodez.com/img/chrome-mono.png",
+    "desc": "Monochromatic Version of the Chrome Logo"
   }
 ]
 
