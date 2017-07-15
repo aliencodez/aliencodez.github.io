@@ -3,7 +3,7 @@ module.exports=[
   {
     "id": "1",
     "label": "Material Dark Simple - Web Template",
-    "img": "http://aliencodez.com/img/material-dark.png",
+    "img": "http://aliencodez.com/img/material-dark.jpg",
     "url": "http://aliencodez.com/templates/Material-Simple/",
     "desc": "Dark Version for a material based webpage"
   },
