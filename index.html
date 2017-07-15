@@ -1,133 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta charset="utf-8">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <title>AlienCodez</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nunito|Open+Sans" rel="stylesheet">
 
-    <!-- Stylesheets and fonts -->
+  <title>Alien Codez</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
 
+<body>
 
-  </head>
+  <header>
 
-  <body>
-    <!-- Header Section , Logo, Nav  -->
-
-    <header>
-
-      <!-- Site Logo -->
-      <div class="site-logo animated slideInUp">
-        <img src="../img/logo-trans-dark.png" alt="">
-      </div>
-
-      <!-- Contact Details -->
-      <div class="contact-details">
-        <div class="contact-elem">
-          <div class="icon"><i class="fa fa-envelope-open"></i></div>
-          <div class="text">contact@aliencodez.com</div>
-        </div>
-        <div class="contact-elem">
-          <div class="icon"><i class="fa fa-phone"></i></div>
-          <div class="text">+91-9885317891</div>
-        </div>
-      </div>
-
-
-      <!-- Navigation Bar -->
-      <div class="nav">
-        <ul>
-          <a href="/">
-            <li>Home</li>
-          </a>
-          <a href="./pages/projects.html">
-            <li>Projects</li>
-          </a>
-          <a href="http://sidgel.ml" target="_blank">
-            <li>Blog</li>
-          </a>
-        </ul>
-      </div>
-    </header>
-
-  <!-- Header End -->
-
-  <!-- Content Container, Sidebar etc -->
-
-    <div class="container">
-
-      <!-- Sidebar -->
-
-      <!-- <div class="sidebar">
-        <div class="sidebar-element">
-          <div class="sidebar-elem-title">
-            Tags
-          </div>
-          <div class="sidebar-elem-content" id='tags'>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- Content Container -->
-
-      <div class="content-container">
-
-        <!-- home section -->
-
-        <div class="section" id="home">
-          <div class="section-title">
-            Alien Codez , Who are we?
-          </div>
-          <div class="section-content">
-          <div class="quote">
-            "Simplicity is beauty"
-          </div>
-          <p>This is true if you know how to use simplicity and minimalism to your advantage.</p>
-          <p>
-            Welcome to <span class="bold">Alien Codez</span>, we are a design company that deals with front-end <span class="bold">Web Projects</span> and <span class="bold">Logos</span>.
-            You dream of a website or an online identity, help us in helping you to bring it to life.
-          </p>
-          <p>
-            Get in touch with us to get yourself a website or a Logo
-          </p>
-          </div>
-        </div>
-
-        <!-- home section end -->
-
-        <!-- projects section -->
-        <div class="section hidden" id="projects"></div>
-
-        <!-- projects section end -->
-
-        <!-- contact section -->
-        <div class="section hidden" id="contact"></div>
-
-        <!-- contact section end -->
-
-
-      </div>
-
+    <!-- Logo -->
+    <div class="logo-image" id="logo-image">
+      <a href="/"><img src="img/logo.png" /></a>
+      <h3 class="logo-text">Alien Codez</h3>
     </div>
+    <nav >
+      <ul >
+        <a href="/">
+          <li>Home</li>
+        </a>
+        <a href="/hireus.html">
+          <li>Hire Us</li>
+        </a>
+        <a href="/projects.html">
+          <li>Projects</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="quoted-line">
+        <i class="fa fa-quote-left"></i>
+        <p>We are a group of developers that specialize in building Web, Mobile and Desktop apps.</p>
+        <i class="fa fa-quote-right"></i>
+    </div>
+    <a href="/hireus.html"><div class="btn btn-large">
+    Hire Us
+  </div></a>
+  </div>
+  <footer>
+    <p>A Design by Alien Codez &copy; <span class="accent">Alien Codez</span><p>
+  </footer>
 
-    <!-- Content Container End -->
-
-    <!-- Footer -->
-
-    <footer>
-      <p>AlienCodez &copy; 2017 by<span class="accent"> AlienCodez</span></p>
-    </footer>
-
-    <!-- Footer End -->
-
-    <!-- Js Imports -->
-
-    <script src="./js/app.js"></script>
-
-  </body>
+  <script src="js/logo-animation.js"></script
+</body>
 </html>

@@ -3,15 +3,28 @@ module.exports=[
   {
     "id": "1",
     "label": "Material Dark Simple - Web Template",
-    "img": "http://aliencodez.com/img/material-simple-screenshot.png",
+    "img": "http://aliencodez.com/img/material-dark.png",
     "url": "http://aliencodez.com/templates/Material-Simple/",
     "desc": "Dark Version for a material based webpage"
   },
   {
     "id": "2",
     "label": "Google Chrome Mono Logo",
-    "img": "http://aliencodez.com/img/chrome-mono.png",
-    "url": "http://aliencodez.com/img/chrome-mono.png",
+    "img": "http://aliencodez.com/img/Chrome.jpg",
+    "url": "http://aliencodez.com/img/Chrome.jpg",
+    "desc": "Monochromatic Version of the Chrome Logo"
+  },
+  {
+    "id": "3",
+    "label": "Fire Monk Logo",
+    "img": "http://aliencodez.com/img/firemonk.jpg",
+    "url": "http://aliencodez.com/img/firemonk.jpg",
+    "desc": "Monochromatic Version of the Chrome Logo"
+  },{
+    "id": "4",
+    "label": "Desko WebApp",
+    "img": "http://aliencodez.com/img/desko.jpg",
+    "url": "https://github.com/alienblogger/desko-v2",
     "desc": "Monochromatic Version of the Chrome Logo"
   }
 ]
@@ -21209,7 +21222,7 @@ function App() {
   return _react2.default.createElement(_grid2.default, { data: gridData });
 }
 
-_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("projects"));
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("grid-container"));
 
 },{"../grid.json":1,"./modules/grid.js":187,"react":185,"react-dom":33}],187:[function(require,module,exports){
 "use strict";
@@ -21230,29 +21243,25 @@ function Grid(props) {
   var grid = props.data.map(function (item) {
     return _react2.default.createElement(
       "div",
-      {
-        onClick: function onClick() {
+      { className: "card", onClick: function onClick() {
           return redirect(item.url);
-        },
-        className: "grid-element",
-        key: item.id
-      },
+        }, key: item.id },
+      _react2.default.createElement("img", { src: item.img, style: { width: 100 + "%" } }),
       _react2.default.createElement(
         "div",
-        { className: "grid-image" },
-        _react2.default.createElement("img", { src: item.img })
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "grid-info" },
+        { className: "card-inner-container" },
         _react2.default.createElement(
-          "div",
-          { className: "grid-title" },
-          item.label
+          "h4",
+          null,
+          _react2.default.createElement(
+            "b",
+            null,
+            item.label
+          )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "grid-desc" },
+          "p",
+          null,
           item.desc
         )
       )
